@@ -1,0 +1,8 @@
+{:deps true
+ :port 7002
+ :dev-http {8080 "resources/public"}
+ :builds {:app {:target :browser
+                :modules {:main {}}
+                :output-dir "resources/public/js"
+                :devtools {:pre-loads [devtools.preload]}
+                #_:nrepl #_{:init-ns css100days.core}}}}
